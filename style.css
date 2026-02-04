@@ -23,12 +23,12 @@ body {
 /* NAVBAR */
 .navbar {
   position: fixed;
-  top: 20px;
+  top: 16px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 92%;
   max-width: 1200px;
-  padding: 14px 30px;
+  padding: 14px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +38,7 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 22px;
 }
 
 .navbar a {
@@ -157,4 +157,101 @@ body {
   margin-top: 12px;
   font-size: 14px;
   opacity: 0.9;
+}
+
+/* ================================================= */
+/* 📱 MOBILE RESPONSIVE (phones) */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 12px 18px;
+  }
+
+  .navbar ul {
+    gap: 14px;
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 6% 80px;
+    gap: 40px;
+  }
+
+  .hero-text {
+    padding: 32px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .hero-img img {
+    width: 220px;
+  }
+
+  .section {
+    padding: 80px 6%;
+  }
+
+  .about-glass {
+    padding: 28px 24px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .projects {
+    gap: 30px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .project-cover {
+    height: 160px;
+  }
+}
+
+/* ================================================= */
+/* 📱 SMALL PHONES */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+  .navbar ul {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .project-content h3 {
+    font-size: 20px;
+  }
+
+  .project-content p {
+    font-size: 14px;
+  }
 }
